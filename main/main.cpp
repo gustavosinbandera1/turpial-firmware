@@ -28,6 +28,8 @@
 #include <WebSocket.h>
 #include <WsHandlerEvents.h>
 
+#include "TFT.h"
+
 #include "defaults.h"
 
 HttpServer httpServer;
@@ -145,6 +147,7 @@ extern "C" void app_main()
 
 
 #if ESC_ENABLED == true
+
     esc::FuelGauge& fuel_gauge = esc::FuelGauge::getInstance();
 
     esc::Battery& battery = esc::Battery::getInstance();
@@ -159,4 +162,8 @@ extern "C" void app_main()
     // Test interrupt
     fuel_gauge.pulseGPOUT();
 #endif
+//
+#if LCD_ENABLED == true
+    tft_init();
+#endif // LCD_ENABLED
 }

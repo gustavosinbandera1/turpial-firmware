@@ -15,7 +15,7 @@
 #define NVS_APP_NAMESPACE "turpial"           /*!< NVS application namespace */
 #define NVS_IS_CONFIGURED_KEY "is_configured" /*!< Is turpial configured? */
 
-#define ESC_ENABLED true              /*!< ESC feature enabled? */
+#define ESC_ENABLED false             /*!< ESC feature enabled? */
 #define ESC_MAX_BATTERY_CAPACITY 2000 /*!< in mAh unit */
 #define ESC_LOW_BATTTERY_THRESHOLD 20 /*!< in % unit */
 #define ESC_CRITICAL_BAT_THRESHOLD 7  /*!< in % unit */
@@ -36,5 +36,8 @@
 #define WAP_CHANNEL 6                       /*!< AP Channel */
 #define WAP_MAXCONN 4                       /*!< AP Maximum connections */
 #define WAP_AUTHMODE WIFI_AUTH_WPA_WPA2_PSK /*!< AP Authentication mode */
+
+// debug
+#define LCD_ENABLED true    /*!< LCD feature enabled? */
 
 #endif // DEFAULTS_H

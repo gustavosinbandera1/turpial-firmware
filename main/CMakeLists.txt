@@ -8,5 +8,6 @@ idf_component_register(SRCS "main.cpp"
                            NVS
                            Radio
                            Task
+                           TFT
                            Util
                            WS)
