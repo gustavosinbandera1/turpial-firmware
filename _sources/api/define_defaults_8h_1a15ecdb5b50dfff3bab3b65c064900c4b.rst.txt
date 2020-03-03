@@ -1,0 +1,13 @@
+.. _exhale_define_defaults_8h_1a15ecdb5b50dfff3bab3b65c064900c4b:
+
+Define ESC_SYSOFF_PIN
+=====================
+
+- Defined in :ref:`file_main_defaults.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ESC_SYSOFF_PIN
